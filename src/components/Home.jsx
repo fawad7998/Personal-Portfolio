@@ -1,5 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
     return (
@@ -14,17 +16,17 @@ const Home = () => {
                         <button className="bg-blue-500 text-white py-2 px-4 rounded mr-4">Hire Me</button>
                         <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button>
                     </div>
-                </div>
-                <div className="flex space-x-4 mt-6">
-                    <a href="#" className="text-blue-500 hover:text-white">
-                        <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" className="text-blue-500 hover:text-white">
-                        <i className="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" className="text-blue-500 hover:text-white">
-                        <i className="fab fa-linkedin"></i>
-                    </a>
+                    <div className="flex space-x-4 mt-16 justify-start">
+                        <a href="#" className="text-blue-500 hover:text-white rounded-full border-2 border-blue-500 w-12 h-12 flex items-center justify-center transition-colors duration-300">
+                            <FontAwesomeIcon icon={faFacebookF} />
+                        </a>
+                        <a href="#" className="text-blue-500 hover:text-white rounded-full border-2 border-blue-500 w-12 h-12 flex items-center justify-center transition-colors duration-300">
+                            <FontAwesomeIcon icon={faTwitter} />
+                        </a>
+                        <a href="#" className="text-blue-500 hover:text-white rounded-full border-2 border-blue-500 w-12 h-12 flex items-center justify-center transition-colors duration-300">
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                    </div>
                 </div>
             </section>
         </>
