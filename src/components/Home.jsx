@@ -25,7 +25,7 @@ const Home = () => {
                             className="font-bold italic"
                         />
                     </h2>
-                    <p className="mb-8 max-w-full md:max-w-lg">With 1+ Year of Experience</p>
+                    <p className="mb-8 text-3xl max-w-full md:max-w-lg">with 2 year's of experience</p>
                     <div className='flex'>
                         <a href="/CV.pdf"><button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Resume <LinkArrow className={'w-5 ml-1'} /></button></a>
                         <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button>

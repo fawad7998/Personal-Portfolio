@@ -17,13 +17,13 @@ const About = () => {
             </div>
             <p className="text-xl text-center text-white font-bold">
                 Frontend Developer!  </p>
-            <p className="w-full max-w-full md:max-w-2xl lg:max-w-3xl text-white">
+            <p className="w-full max-w-full md:max-w-2xl lg:max-w-5xl text-white text-justify">
                 Passionate and detail-oriented Software Developer with expertise in various programming languages and frameworks. Skilled in creating efficient software solutions and committed to delivering top-notch work. Thrives in dynamic environments, leveraging technical know-how to solve complex problems. Experienced in front-end development, adept at integrating diverse technologies for user-friendly applications. Excels in teamwork, understanding project needs, and delivering innovative solutions that surpass expectations.
             </p>
 
-            <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            {/* <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                 Read More
-            </button>
+            </button> */}
         </div>
     );
 };
