@@ -13,3 +13,22 @@ body {
   transform: scale(0.9);
   transform-origin: top center;
 }
+
+.circle-image::before,
+.circle-image::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid #00f;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+}
+
+.circle-image::after {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-color: rgba(0, 0, 255, 0.5);
+}

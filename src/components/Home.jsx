@@ -9,8 +9,8 @@ const Home = () => {
         <div className='bg-cover bg-center' style={{ backgroundImage: `url("/latest.png")` }}>
             <section className=" scale-90 text-white p-10 md:p-6 flex flex-col items-start justify-center h-screen bg-cover bg-center pt-20 md:pt-24" >
                 <div className="container mx-auto mt-6 text-left">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
-                    <h2 className="text-2xl md:text-3xl text-blue-300 mb-4">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
+                    <h2 className="text-2xl md:text-6xl text-blue-300 mb-4">
                         <TypeAnimation
                             sequence={[
                                 "Frontend Developer",
@@ -25,7 +25,7 @@ const Home = () => {
                             className="font-bold italic"
                         />
                     </h2>
-                    <p className="mb-8 max-w-full md:max-w-lg">Passionate and detail-oriented Software Developer with expertise in various programming languages and frameworks. Skilled in creating efficient software solutions and committed to delivering top-notch work. Thrives in dynamic environments, leveraging technical know-how to solve complex problems. Experienced in front-end development, adept at integrating diverse technologies for user-friendly applications. Excels in teamwork, understanding project needs, and delivering innovative solutions that surpass expectations.</p>
+                    <p className="mb-8 max-w-full md:max-w-lg">With 1+ Year of Experience</p>
                     <div className='flex'>
                         <a href="/CV.pdf"><button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Resume <LinkArrow className={'w-5 ml-1'} /></button></a>
                         <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button>

@@ -1,39 +1,31 @@
 import React from 'react';
 
-const AboutPage = () => {
+const About = () => {
     return (
-        <div className="bg-[#081B29] py-12">
-            <div className="container mx-auto px-4">
-                <h1 className="text-4xl font-bold text-center mb-8 text-white">About</h1>
-                <h2 className="text-3xl text-blue-500 mb-4">Frontend Developer</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-white p-4 rounded-lg shadow-md">
-                        <h2 className="text-2xl font-bold mb-2 text-gray-800">Education</h2>
-                        <ul className="list-disc list-inside text-gray-600">
-                            <li className="mb-1">2017-2018: Master Degree - University</li>
-                            <li className="mb-1">2018-2019: Master Degree - University</li>
-                            <li className="mb-1">3019-3000: Master Degree - University</li>
-                        </ul>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-md">
-                        <h2 className="text-2xl font-bold mb-2 text-gray-800">Experience</h2>
-                        <div className="mb-4">
-                            <h3 className="text-xl font-semibold mb-1 text-gray-700">2017-2018: Web Developer - Company</h3>
-                            <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                        </div>
-                        <div className="mb-4">
-                            <h3 className="text-xl font-semibold mb-1 text-gray-700">2018-2019: Web Developer - Company</h3>
-                            <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-semibold mb-1 text-gray-700">2019-2020: Web Developer - Company</h3>
-                            <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                        </div>
-                    </div>
+        <div className="flex flex-col items-center justify-center min-h-screen p-8 space-y-4 bg-[#081B29]">
+            <h1 className="text-4xl font-bold text-center">
+                <span className="text-white">About</span> <span className="text-blue-300">Me</span>
+            </h1>
+            <div className="flex justify-center mb-4">
+                <div className="relative">
+                    <img
+                        src="/fo.png"
+                        alt="Profile Picture"
+                        className="w-48 h-48 rounded-full object-cover border-4 border-blue-300"
+                    />
                 </div>
             </div>
+            <p className="text-xl text-center text-white font-bold">
+                Frontend Developer!  </p>
+            <p className="w-full max-w-full md:max-w-2xl lg:max-w-3xl text-white">
+                Passionate and detail-oriented Software Developer with expertise in various programming languages and frameworks. Skilled in creating efficient software solutions and committed to delivering top-notch work. Thrives in dynamic environments, leveraging technical know-how to solve complex problems. Experienced in front-end development, adept at integrating diverse technologies for user-friendly applications. Excels in teamwork, understanding project needs, and delivering innovative solutions that surpass expectations.
+            </p>
+
+            <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Read More
+            </button>
         </div>
     );
 };
 
-export default AboutPage;
+export default About;
