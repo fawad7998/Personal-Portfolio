@@ -1,19 +1,39 @@
 import React from 'react';
 
-const About = () => {
+const AboutPage = () => {
     return (
-        <section className="bg-gray-800 text-white p-6">
-            <div className="container mx-auto text-center">
-                <h1 className="text-5xl font-bold mb-6">Hi, I'm Jacob Aiden</h1>
+        <div className="bg-[#081B29] py-12">
+            <div className="container mx-auto px-4">
+                <h1 className="text-4xl font-bold text-center mb-8 text-white">About</h1>
                 <h2 className="text-3xl text-blue-500 mb-4">Frontend Developer</h2>
-                <p className="mb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                <div>
-                    <button className="bg-blue-500 text-white py-2 px-4 rounded mr-4">Hire Me</button>
-                    <button className="bg-transparent border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="bg-white p-4 rounded-lg shadow-md">
+                        <h2 className="text-2xl font-bold mb-2 text-gray-800">Education</h2>
+                        <ul className="list-disc list-inside text-gray-600">
+                            <li className="mb-1">2017-2018: Master Degree - University</li>
+                            <li className="mb-1">2018-2019: Master Degree - University</li>
+                            <li className="mb-1">3019-3000: Master Degree - University</li>
+                        </ul>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg shadow-md">
+                        <h2 className="text-2xl font-bold mb-2 text-gray-800">Experience</h2>
+                        <div className="mb-4">
+                            <h3 className="text-xl font-semibold mb-1 text-gray-700">2017-2018: Web Developer - Company</h3>
+                            <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        </div>
+                        <div className="mb-4">
+                            <h3 className="text-xl font-semibold mb-1 text-gray-700">2018-2019: Web Developer - Company</h3>
+                            <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-semibold mb-1 text-gray-700">2019-2020: Web Developer - Company</h3>
+                            <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
-export default About;
+export default AboutPage;

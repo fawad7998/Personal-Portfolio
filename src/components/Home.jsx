@@ -1,19 +1,33 @@
 import React from 'react';
-import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { LinkArrow } from '../assets/LinkArrow';
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
     return (
-        <>
-            <Navbar />
-            <section className="text-white p-10 md:p-6 flex flex-col items-start justify-center h-screen bg-cover bg-center pt-20 md:pt-24" style={{ backgroundImage: `url("/home.jpg")` }}>
+        <div className='bg-cover bg-center' style={{ backgroundImage: `url("/latest.png")` }}>
+            <section className=" scale-90 text-white p-10 md:p-6 flex flex-col items-start justify-center h-screen bg-cover bg-center pt-20 md:pt-24" >
                 <div className="container mx-auto mt-6 text-left">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Fawad Ahmad</h1>
-                    <h2 className="text-2xl md:text-3xl text-blue-500 mb-4">Frontend Developer</h2>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
+                    <h2 className="text-2xl md:text-3xl text-blue-300 mb-4">
+                        <TypeAnimation
+                            sequence={[
+                                "Frontend Developer",
+                                1000,
+                                "UI,UX Developer",
+                                1000,
+                                "MERN Stack Developer",
+                                1000,
+                            ]}
+                            speed={50}
+                            repeat={Infinity}
+                            className="font-bold italic"
+                        />
+                    </h2>
                     <p className="mb-8 max-w-full md:max-w-lg">Passionate and detail-oriented Software Developer with expertise in various programming languages and frameworks. Skilled in creating efficient software solutions and committed to delivering top-notch work. Thrives in dynamic environments, leveraging technical know-how to solve complex problems. Experienced in front-end development, adept at integrating diverse technologies for user-friendly applications. Excels in teamwork, understanding project needs, and delivering innovative solutions that surpass expectations.</p>
-                    <div>
-                        <button className="bg-blue-500 text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Hire Me</button>
+                    <div className='flex'>
+                        <a href="/CV.pdf"><button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Resume <LinkArrow className={'w-5 ml-1'} /></button></a>
                         <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button>
                     </div>
                     <div className="flex space-x-2 md:space-x-4 mt-6 justify-start">
@@ -29,7 +43,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 
