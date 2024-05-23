@@ -35,7 +35,7 @@ export const projects = {
             projects: [],
             position: 'Flutter Developer',
             company: 'Native Developers',
-            companyLink: 'https://www.linkedin.com/company/iiitians-network/',
+            companyLink: 'https://www.linkedin.com/',
             address: 'Lahore, Pakistan',
             work: [
                 "Supported the implementation of front-end functionality and interactivity using Flutter framework and Dart language",

@@ -14,13 +14,13 @@ const Navbar = () => {
                         <ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink>
                     </li>
                     <li className="hover:text-blue-500 cursor-pointer">
-                        <ScrollLink to="experience" smooth={true} duration={500}>Skills</ScrollLink>
+                        <ScrollLink to="skills" smooth={true} duration={500}>Skills</ScrollLink>
                     </li>
                     <li className="hover:text-blue-500 cursor-pointer">
-                        <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
+                        <ScrollLink to="experience" smooth={true} duration={500}>Experience</ScrollLink>
                     </li>
                     <li className="hover:text-blue-500 cursor-pointer">
-                        <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
+                        <ScrollLink to="project" smooth={true} duration={500}>Project</ScrollLink>
                     </li>
                 </ul>
             </nav>

@@ -6,6 +6,8 @@ import { TypeAnimation } from "react-type-animation";
 import About from './About';
 import Skills from './Skills';
 import Experience from './Experience/Experience';
+import Education from './Education/Education';
+import Project from './Projects/Projects';
 
 const Home = () => {
     return (
@@ -51,10 +53,9 @@ const Home = () => {
             </div>
             <About />
             <Skills />
-            <div className="pt-16 p-32 ">
-
-                <Experience />
-            </div>
+            <Experience />
+            <Education />
+            <Project />
         </>
     );
 };

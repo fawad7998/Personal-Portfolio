@@ -3,8 +3,8 @@ import React from 'react';
 const About = () => {
     return (
         <div id='about' className="flex flex-col items-center justify-center min-h-screen p-8 space-y-4 ">
-            <h1 className="text-4xl font-bold text-center">
-                <span className="text-white">About</span> <span className="text-blue-300">Me</span>
+            <h1 className="text-4xl font-bold text-center pb-6">
+                <span className="text-white text-6xl">About</span> <span className="text-blue-300 text-6xl">Me</span>
             </h1>
             <div className="flex justify-center mb-4">
                 <div className="relative">
