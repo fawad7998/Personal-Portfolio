@@ -1,76 +1,69 @@
-// import React from 'react';
-
-// const Skills = () => {
-//     return (
-//         // <div className="flex flex-col items-center justify-center min-h-screen p-8 space-y-4 bg-[#081B29]" >
-//         //     <section className="bg-gray-800 text-white p-6">
-//         //         <div className="container mx-auto">
-//         //             <h2 className="text-4xl font-bold mb-6 text-center">My Skills</h2>
-//         //             <div className="grid grid-cols-2 gap-6">
-//         //                 <div>
-//         //                     <h3 className="text-2xl mb-4">Coding Skills</h3>
-//         //                     <ul>
-//         //                         <li className="mb-2">HTML <span className="text-blue-500">90%</span></li>
-//         //                         <li className="mb-2">CSS <span className="text-blue-500">80%</span></li>
-//         //                         <li className="mb-2">JavaScript <span className="text-blue-500">65%</span></li>
-//         //                         <li className="mb-2">Python <span className="text-blue-500">75%</span></li>
-//         //                     </ul>
-//         //                 </div>
-//         //                 <div>
-//         //                     <h3 className="text-2xl mb-4">Professional Skills</h3>
-//         //                     <ul>
-//         //                         <li className="mb-2">Web Design <span className="text-blue-500">95%</span></li>
-//         //                         <li className="mb-2">Web Development <span className="text-blue-500">67%</span></li>
-//         //                         <li className="mb-2">Graphic Design <span className="text-blue-500">85%</span></li>
-//         //                         <li className="mb-2">SEO Marketing <span className="text-blue-500">60%</span></li>
-//         //                     </ul>
-//         //                 </div>
-//         //             </div>
-//         //         </div>
-//         //     </section>
-//         // </div>
-//         <>
-
-//         </>
-//     )
-// };
-
-// export default Skills;
-
-
-
-// src/components/Skills.js
 import React from 'react';
+import {
+    DiJavascript1,
+    DiReact,
+    DiNodejsSmall,
+    DiHtml5,
+    DiCss3,
+    DiSass,
+    DiBootstrap,
+    DiMongodb,
+    DiGithubBadge,
+} from "react-icons/di";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiMui, SiExpress, SiTypescript, SiWebpack } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const skills = [
-    { name: 'Python', icon: 'path-to-python-icon.png' },
-    { name: 'Flutter', icon: 'path-to-flutter-icon.png' },
-    { name: 'Ubuntu', icon: 'path-to-ubuntu-icon.png' },
-    { name: 'Git Source Control', icon: 'path-to-git-icon.png' },
-    { name: 'ERPNext', icon: 'path-to-erpnext-icon.png' },
-    { name: 'Mongodb', icon: 'path-to-mongodb-icon.png' },
-    { name: 'Html & CSS', icon: 'path-to-html-css-icon.png' },
-    { name: 'JavaScript', icon: 'path-to-javascript-icon.png' },
-    { name: 'Frappe', icon: 'path-to-frappe-icon.png' },
-    { name: '.Net', icon: 'path-to-dotnet-icon.png' },
-    { name: 'Flask Microweb Framework', icon: 'path-to-flask-icon.png' },
-    { name: 'MySql', icon: 'path-to-mysql-icon.png' },
-    { name: 'AWS Server', icon: 'path-to-aws-icon.png' },
+    { name: 'JavaScript', icon: <DiJavascript1 className="text-yellow-500 text-7xl" /> },
+    { name: 'React', icon: <DiReact className="text-blue-600 text-7xl" /> },
+    { name: 'NodeJS', icon: <DiNodejsSmall className="text-green-600 text-7xl" /> },
+    { name: 'HTML5', icon: <DiHtml5 className="text-blue-600 text-7xl" /> },
+    { name: 'Css3', icon: <DiCss3 className="text-orange-600 text-7xl" /> },
+    { name: 'Sass', icon: <DiSass className="text-pink-600 text-7xl" /> },
+    { name: 'Bootstrap', icon: <DiBootstrap className="text-purple-600 text-7xl" /> },
+    { name: 'MongoDB', icon: <DiMongodb className="text-green-600 text-7xl" /> },
+    { name: 'TypeScript', icon: <SiTypescript className="text-blue-900 text-7xl" /> },
+    { name: 'Nextjs', icon: <RiNextjsFill className="text-black text-7xl" /> },
+    { name: 'MUI', icon: <SiMui className="text-blue-500 text-7xl" /> },
+    { name: 'Firebase', icon: <IoLogoFirebase className="text-yellow-500 text-7xl" /> },
+    { name: 'Express', icon: <SiExpress className="text-black text-7xl" /> },
+    { name: 'Github', icon: <DiGithubBadge className="text-black text-7xl" /> },
+
+    { name: 'Webpack', icon: <SiWebpack className="text-blue-700 text-7xl" /> },
 ];
 
 const Skills = () => {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800 p-4">
-            <h1 className="text-4xl font-bold text-white mb-8">My Skills</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+
+        <div className="min-h-screen flex flex-col items-center justify-center p-4">
+            <h1 className="text-6xl font-bold text-white mb-8">My Skills</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-7">
                 {skills.map((skill, index) => (
-                    <div key={index} className="bg-gray-700 p-6 rounded-lg flex flex-col items-center hover:bg-gray-600 transition">
-                        <img src={skill.icon} alt={skill.name} className="w-16 h-16 mb-4" />
-                        <h2 className="text-xl font-semibold text-white">{skill.name}</h2>
-                    </div>
+                    <>
+
+                        {/* <div key={index} className="bg-gray-700 p-6 rounded-lg flex flex-col items-center hover:bg-gray-600 transition">
+                            <div className="m-10" >{skill.icon} </div>
+                            <h2 className="text-xl font-semibold text-white">{skill.name}</h2>
+                        </div> */}
+                        {/*  */}
+                        <div className="relative w-[190px] h-[254px] text-white transition-transform duration-500 cursor-pointer hover:-translate-y-5">
+                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 to-blue-400 rounded-xl"></div>
+                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 to-blue-400 blur-[14px]"></div>
+                            <span className="absolute top-1.5 left-1.5 right-1.5 bottom-1.5 bg-black bg-opacity-60 z-20 rounded-lg">
+                                <span className="absolute top-0 left-0 w-1/2 h-full bg-white bg-opacity-10"></span>
+                            </span>
+                            <div className="relative p-2 z-30 w-full h-full flex flex-col items-center justify-center font-extrabold text-xl">
+                                <div className="m-10">{skill.icon}</div>
+                                <h2 className="text-xl font-semibold text-white">{skill.name}</h2>
+                            </div>
+                        </div>
+                    </>
                 ))}
             </div>
-        </div>
+        </div >
+
     );
 };
 

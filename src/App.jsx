@@ -8,6 +8,7 @@ import {
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
+import Experience from './components/Experience/Experience';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/experience" element={<Experience />} />
       </Routes>
     </>
   );

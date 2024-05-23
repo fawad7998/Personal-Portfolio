@@ -4,12 +4,14 @@ import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-s
 import { LinkArrow } from '../assets/LinkArrow';
 import { TypeAnimation } from "react-type-animation";
 import About from './About';
+import Skills from './Skills';
+import Experience from './Experience/Experience';
 
 const Home = () => {
     return (
         <>
 
-            <div className='bg-cover bg-center' style={{ backgroundImage: `url("/latest.png")` }}>
+            <div id='/' className='bg-cover bg-center' style={{ backgroundImage: `url("/latest.png")` }}>
                 <section className=" scale-90 text-white p-10 md:p-6 flex flex-col items-start justify-center h-screen bg-cover bg-center pt-20 md:pt-24" >
                     <div className="container mx-auto mt-6 text-left">
                         <h1 className="text-4xl md:text-6xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
@@ -48,6 +50,11 @@ const Home = () => {
                 </section>
             </div>
             <About />
+            <Skills />
+            <div className="pt-16 p-32 ">
+
+                <Experience />
+            </div>
         </>
     );
 };
