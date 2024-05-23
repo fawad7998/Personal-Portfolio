@@ -32,7 +32,7 @@ const Home = () => {
                         </h2>
                         <p className="mb-8 text-3xl max-w-full md:max-w-lg">with 2 year's of experience</p>
                         <div className='flex'>
-                            <a href="/CV.pdf"><button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Resume <LinkArrow className={'w-5 ml-1'} /></button></a>
+                            <a href="/FawadCV.pdf"><button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Resume <LinkArrow className={'w-5 ml-1'} /></button></a>
                             <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button>
                         </div>
                         <div className="flex space-x-2 md:space-x-4 mt-6 justify-start">
