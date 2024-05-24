@@ -1,56 +1,141 @@
-import React, { useEffect, useState } from 'react';
-import { projects } from './ProjectData';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-function Project() {
-
-    const [scrollIndex, setScrollIndex] = useState(0);
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setScrollIndex((prevIndex) => (prevIndex + 1) % projects.length);
-        }, 3000); // Change the interval time as needed
-
-        return () => clearInterval(intervalId);
-    }, []);
-
-
-    // ${
-    // index === scrollIndex ? '' : 'hidden'
-    // }`}
-
-
-
+const Project = () => {
     return (
-        <div id="projects" className="my-12 p-20">
-            <h2 className="font-bold text-6xl mb-12 w-full text-center md:text-6xl xs:text-4xl text-white">
-                Projects
-            </h2>
-            <div className="relative flex justify-center items-center">
-                <div className="flex space-x-8 overflow-x-auto no-scrollbar">
-                    {projects.map((data, index) => {
-                        const { name, description, githubLink, vercelLink } = data;
-                        return (
-                            <div className="relative w-700 h-96 overflow-hidden rounded-lg shadow-lg">
-                                <img
-                                    className="absolute inset-0 object-cover w-full h-full transition-opacity duration-500"
-                                    src="https://via.placeholder.com/700x400"
-                                    alt="Card background"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-300 to-blue-700 bg-opacity-80 backdrop-blur-lg transition-opacity duration-500 opacity-0 hover:opacity-100 flex justify-center items-center text-white">
-                                    <p className="text-4xl font-bold">
-                                        <div>
-                                            {name}
-                                        </div>
-                                    </p>
-                                </div>
-                            </div>
-
-                        );
-                    })}
+        <>
+            <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
+                <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projrcts</span>
+            </h1>
+            <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, type: "spring" }}
+                className="container mx-auto px-4 py-16"
+            >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="text-center ">
+                        <motion.h2
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-4xl font-bold mb-4 "
+                        >
+                            Relentless performance
+                        </motion.h2>
+                        <motion.p
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-lg text-gray-500"
+                        >
+                            Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.
+                        </motion.p>
+                    </div>
+                    <div className="flex justify-center">
+                        <motion.img
+                            initial={{ scale: 0.5, opacity: 0 }}
+                            whileInView={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80"
+                            alt="Car"
+                            className="w-full h-auto"
+                        />
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    <div className="flex justify-center">
+                        <motion.img
+                            initial={{ scale: 0.5, opacity: 0 }}
+                            whileInView={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+                            alt="Car"
+                            className="w-full h-auto"
+                        />
+                    </div>
+                    <div className="text-center">
+                        <motion.h2
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-4xl font-bold mb-4"
+                        >
+                            Designed for efficiency
+                        </motion.h2>
+                        <motion.p
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-lg text-gray-500"
+                        >
+                            With a drag coefficient of just .212 Cd, Honda e is built for speed, endurance and range. Improved aerodynamics and a wider chassis offer more responsive performance.
+                        </motion.p>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    <div className="text-center ">
+                        <motion.h2
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-4xl font-bold mb-4 "
+                        >
+                            Relentless performance
+                        </motion.h2>
+                        <motion.p
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-lg text-gray-500"
+                        >
+                            Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.
+                        </motion.p>
+                    </div>
+                    <div className="flex justify-center">
+                        <motion.img
+                            initial={{ scale: 0.5, opacity: 0 }}
+                            whileInView={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80"
+                            alt="Car"
+                            className="w-full h-auto"
+                        />
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    <div className="flex justify-center">
+                        <motion.img
+                            initial={{ scale: 0.5, opacity: 0 }}
+                            whileInView={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+                            alt="Car"
+                            className="w-full h-auto"
+                        />
+                    </div>
+                    <div className="text-center">
+                        <motion.h2
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-4xl font-bold mb-4"
+                        >
+                            Designed for efficiency
+                        </motion.h2>
+                        <motion.p
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="text-lg text-gray-500"
+                        >
+                            With a drag coefficient of just .212 Cd, Honda e is built for speed, endurance and range. Improved aerodynamics and a wider chassis offer more responsive performance.
+                        </motion.p>
+                    </div>
+                </div>
+            </motion.div>
+        </>
     );
-}
+};
 
 export default Project;

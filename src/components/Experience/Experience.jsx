@@ -69,9 +69,9 @@ const Experience = () => {
     const collaborations = projects.collaborations;
     return (
         <div id="experience" className="my-12 p-20">
-            <h2 className="font-bold text-6xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16 text-white">
-                Experiences
-            </h2>
+            <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
+                <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Experience</span>
+            </h1>
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full text-light-blue-100">
                 <motion.div
                     className="absolute left-9 top-0.5 w-[4px] h-full bg-dark-blue-500 origin-top dark:bg-light-blue-400 md:w-[2px] md:left-[30px] xs:left-[20px]"

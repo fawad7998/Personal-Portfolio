@@ -14,6 +14,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import { SiMui, SiExpress, SiTypescript, SiWebpack } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 
+
 const skills = [
     { name: 'JavaScript', icon: <DiJavascript1 className="text-yellow-500 text-7xl" /> },
     { name: 'React', icon: <DiReact className="text-blue-600 text-7xl" /> },
@@ -35,33 +36,37 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div id='skills' className="min-h-screen flex flex-col items-center justify-center p-20 ">
-            <h1 className="text-6xl font-bold text-white mb-8 pb-6">My Skills</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-11">
-                {skills.map((skill, index) => (
-                    <>
+        <>
+            <div id='skills' className="min-h-screen flex flex-col items-center justify-center p-20 ">
+                <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
+                    <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Skills</span>
+                </h1>
+                {/* <h1 className="text-6xl font-bold text-white mb-8 pb-6">My Skills</h1> */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-11">
+                    {skills.map((skill, index) => (
+                        <>
 
-                        {/* <div key={index} className="bg-gray-700 p-6 rounded-lg flex flex-col items-center hover:bg-gray-600 transition">
+                            {/* <div key={index} className="bg-gray-700 p-6 rounded-lg flex flex-col items-center hover:bg-gray-600 transition">
                             <div className="m-10" >{skill.icon} </div>
                             <h2 className="text-xl font-semibold text-white">{skill.name}</h2>
                         </div> */}
-                        {/*  */}
-                        <div className="relative w-[190px] h-[254px] text-white transition-transform duration-500 cursor-pointer hover:-translate-y-5">
-                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 to-blue-400 rounded-xl"></div>
-                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 to-blue-400 blur-[14px]"></div>
-                            <span className="absolute top-1.5 left-1.5 right-1.5 bottom-1.5 bg-black bg-opacity-60 z-20 rounded-lg">
-                                <span className="absolute top-0 left-0 w-1/2 h-full bg-white bg-opacity-10"></span>
-                            </span>
-                            <div className="relative p-2 z-30 w-full h-full flex flex-col items-center justify-center font-extrabold text-xl">
-                                <div className="m-10">{skill.icon}</div>
-                                <h2 className="text-xl font-semibold text-white">{skill.name}</h2>
+                            {/*  */}
+                            <div className="relative w-[170px] h-[234px] text-white transition-transform duration-500 cursor-pointer hover:-translate-y-5">
+                                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 to-blue-400 rounded-xl"></div>
+                                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 to-blue-400 blur-[14px]"></div>
+                                <span className="absolute top-1.5 left-1.5 right-1.5 bottom-1.5 bg-black bg-opacity-60 z-20 rounded-lg">
+                                    <span className="absolute top-0 left-0 w-1/2 h-full bg-white bg-opacity-10"></span>
+                                </span>
+                                <div className="relative p-2 z-30 w-full h-full flex flex-col items-center justify-center font-extrabold text-xl">
+                                    <div className="m-10">{skill.icon}</div>
+                                    <h2 className="text-xl font-semibold text-white">{skill.name}</h2>
+                                </div>
                             </div>
-                        </div>
-                    </>
-                ))}
-            </div>
-        </div >
-
+                        </>
+                    ))}
+                </div>
+            </div >
+        </>
     );
 };
 
