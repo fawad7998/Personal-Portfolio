@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 
 const Project = () => {
     return (
-        <div className='scale-90'>
-            <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
-                <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projrcts</span>
+        <div id='project' className='scale-90'>
+            <h1 className="text-4xl font-bold text-center mb-5 pb-5">
+                <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projects</span>
             </h1>
             <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, type: "spring" }}
-                className="container mx-auto px-4 py-16"
+                className="container mx-auto pt-10"
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col items-center justify-center">
@@ -19,7 +19,7 @@ const Project = () => {
                             initial={{ y: -50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, type: "spring" }}
-                            className="text-4xl font-bold mb-4 "
+                            className="text-4xl font-bold mb-5"
                         >
                             Relentless performance
                         </motion.h2>
@@ -59,7 +59,7 @@ const Project = () => {
                             initial={{ y: 50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, type: "spring" }}
-                            className="text-4xl font-bold mb-4"
+                            className="text-4xl font-bold mb-5"
                         >
                             Designed for efficiency
                         </motion.h2>
@@ -74,12 +74,12 @@ const Project = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
-                    <div className="flex flex-col items-center justify-center ">
+                    <div className="flex flex-col items-center justify-center">
                         <motion.h2
                             initial={{ y: -50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, type: "spring" }}
-                            className="text-4xl font-bold mb-4 "
+                            className="text-4xl font-bold mb-5"
                         >
                             Relentless performance
                         </motion.h2>
@@ -119,7 +119,7 @@ const Project = () => {
                             initial={{ y: 50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, type: "spring" }}
-                            className="text-4xl font-bold mb-4"
+                            className="text-4xl font-bold mb-5"
                         >
                             Designed for efficiency
                         </motion.h2>

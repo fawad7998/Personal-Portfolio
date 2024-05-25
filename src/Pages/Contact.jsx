@@ -1,31 +1,69 @@
 import React from 'react';
 
-const Contact = () => {
+const ContactForm = () => {
     return (
-        <section className="bg-gray-800 text-white p-6">
-            <div className="container mx-auto">
-                <h2 className="text-4xl font-bold mb-6 text-center">Contact Me</h2>
-                <form className="max-w-lg mx-auto">
-                    <div className="mb-4">
-                        <input type="text" className="w-full p-3 bg-gray-700 rounded" placeholder="Full Name" />
+        <div className="min-h-screen flex items-center justify-center py-0 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-lg w-full space-y-8">
+                <div>
+                    <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
+                        <span className="text-white text-6xl">Contact</span> <span className="text-blue-300 text-6xl">Me!</span>
+                    </h1>
+                </div>
+                <form className="mt-8 space-y-6" action="https://getform.io/f/jawxmxgb" method="POST">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <input
+                                type="text"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="Full Name"
+                                name='Name'
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="email"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="Email Address"
+                                name='Email'
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="tel"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="Mobile Number"
+                                name='Number'
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="text"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="Email Subject"
+                                name='Subject'
+                            />
+                        </div>
                     </div>
-                    <div className="mb-4">
-                        <input type="email" className="w-full p-3 bg-gray-700 rounded" placeholder="Email Address" />
+                    <div>
+                        <textarea
+                            name="Message"
+                            className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                            placeholder="Your Message"
+                            rows="5"
+                        ></textarea>
                     </div>
-                    <div className="mb-4">
-                        <input type="text" className="w-full p-3 bg-gray-700 rounded" placeholder="Mobile Number" />
+                    <div>
+                        <button
+                            type="submit"
+                            className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 w-full"
+                        >
+                            Submit
+                        </button>
                     </div>
-                    <div className="mb-4">
-                        <input type="text" className="w-full p-3 bg-gray-700 rounded" placeholder="Email Subject" />
-                    </div>
-                    <div className="mb-4">
-                        <textarea className="w-full p-3 bg-gray-700 rounded" placeholder="Your Message" rows="4"></textarea>
-                    </div>
-                    <button type="submit" className="w-full p-3 bg-blue-500 text-white rounded">Submit</button>
                 </form>
             </div>
-        </section>
+        </div>
     );
-};
+}
 
-export default Contact;
+export default ContactForm;

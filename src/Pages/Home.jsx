@@ -8,6 +8,7 @@ import Skills from './Skills';
 import Experience from './Experience/Experience';
 import Education from './Education/Education';
 import Project from './Projects/Projects';
+import Contact from './Contact';
 
 const Home = () => {
     return (
@@ -55,6 +56,7 @@ const Home = () => {
             <Experience />
             <Education />
             <Project />
+            <Contact />
         </>
     );
 };
