@@ -31,6 +31,15 @@ const Project = () => {
                         >
                             Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.
                         </motion.p>
+                        <motion.p
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="flex mt-10 text-lg text-gray-500"
+                        >
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Github</button>
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Website</button>
+                        </motion.p>
                     </div>
                     <div className="flex justify-center">
                         <motion.img
@@ -70,6 +79,15 @@ const Project = () => {
                             className="text-lg text-gray-500"
                         >
                             With a drag coefficient of just .212 Cd, Honda e is built for speed, endurance and range. Improved aerodynamics and a wider chassis offer more responsive performance.
+                        </motion.p>
+                        <motion.p
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="flex mt-10 text-lg text-gray-500"
+                        >
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Github</button>
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Website</button>
                         </motion.p>
                     </div>
                 </div>
@@ -91,6 +109,15 @@ const Project = () => {
                         >
                             Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.
                         </motion.p>
+                        <motion.p
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="flex mt-10 text-lg text-gray-500"
+                        >
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Github</button>
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Website</button>
+                        </motion.p>
                     </div>
                     <div className="flex justify-center">
                         <motion.img
@@ -130,6 +157,15 @@ const Project = () => {
                             className="text-lg text-gray-500"
                         >
                             With a drag coefficient of just .212 Cd, Honda e is built for speed, endurance and range. Improved aerodynamics and a wider chassis offer more responsive performance.
+                        </motion.p>
+                        <motion.p
+                            initial={{ y: -50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                            className="flex mt-10 text-lg text-gray-500"
+                        >
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Github</button>
+                            <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Website</button>
                         </motion.p>
                     </div>
                 </div>
