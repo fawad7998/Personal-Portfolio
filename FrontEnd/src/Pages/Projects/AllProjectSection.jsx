@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { DataContext } from '../../ContextApi/Context';
 
-const Allprojects = () => {
+const Project = () => {
     const projects = useContext(DataContext)
     return (
-        <div className='scale-90 pt-[100px]'>
+        <div className='scale-90 mt-[100px]'>
             <h1 className="text-4xl font-bold text-center mb-8 pb-6">
                 <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projects</span>
             </h1>
@@ -29,7 +29,7 @@ const Allprojects = () => {
                                         transition={{ duration: 0.5, type: "spring" }}
                                         className="text-4xl font-bold mb-5"
                                     >
-                                        {project.title}
+                                        {project.ProjectTitle}
                                     </motion.h2>
                                     <motion.p
                                         initial={{ y: -50, opacity: 0 }}
@@ -37,7 +37,7 @@ const Allprojects = () => {
                                         transition={{ duration: 0.5, type: "spring" }}
                                         className="text-lg text-gray-500"
                                     >
-                                        {project.description}
+                                        {project.Projectdescription}
                                     </motion.p>
                                     <motion.div
                                         initial={{ y: -50, opacity: 0 }}
@@ -45,12 +45,12 @@ const Allprojects = () => {
                                         transition={{ duration: 0.5, type: "spring" }}
                                         className="flex mt-10 text-lg text-gray-500"
                                     >
-                                        <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
+                                        <a href={project.GithubLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
                                             Github
-                                        </button>
-                                        <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
+                                        </button></a>
+                                        <a href={project.VercelLink}> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
                                             Website
-                                        </button>
+                                        </button></a>
                                     </motion.div>
                                 </div>
                                 <div className="flex justify-center">
@@ -58,7 +58,7 @@ const Allprojects = () => {
                                         initial={{ scale: 0.5, opacity: 0 }}
                                         whileInView={{ scale: 1, opacity: 1 }}
                                         transition={{ duration: 0.5, type: "spring" }}
-                                        src={project.imageUrl}
+                                        src={project.ImageUrl}
                                         alt="Project"
                                         className="w-full h-auto"
                                     />
@@ -116,4 +116,4 @@ const Allprojects = () => {
     );
 };
 
-export default Allprojects;
+export default Project;
