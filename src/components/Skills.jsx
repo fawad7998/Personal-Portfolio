@@ -37,7 +37,7 @@ const skills = [
 const Skills = () => {
     return (
         <>
-            <div id='skills' className="min-h-screen flex flex-col items-center justify-center p-20 ">
+            <div id='skills' className=" min-h-screen flex flex-col items-center justify-center p-20 ">
                 <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
                     <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Skills</span>
                 </h1>

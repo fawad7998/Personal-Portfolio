@@ -12,7 +12,6 @@ import Project from './Projects/Projects';
 const Home = () => {
     return (
         <>
-
             <div id='/' className='bg-cover bg-center' style={{ backgroundImage: `url("/latest.png")` }}>
                 <section className=" scale-90 text-white p-10 md:p-6 flex flex-col items-start justify-center h-screen bg-cover bg-center pt-20 md:pt-24" >
                     <div className="container mx-auto mt-6 text-left">

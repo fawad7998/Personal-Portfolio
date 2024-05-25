@@ -68,7 +68,7 @@ const Experience = () => {
     });
     const collaborations = projects.collaborations;
     return (
-        <div id="experience" className="my-12 p-20">
+        <div id="experience" className="scale-90 my-12 p-20">
             <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
                 <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Experience</span>
             </h1>

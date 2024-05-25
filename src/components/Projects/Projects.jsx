@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Project = () => {
     return (
-        <>
+        <div className='scale-90'>
             <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
                 <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projrcts</span>
             </h1>
@@ -14,7 +14,7 @@ const Project = () => {
                 className="container mx-auto px-4 py-16"
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="text-center ">
+                    <div className="flex flex-col items-center justify-center">
                         <motion.h2
                             initial={{ y: -50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -43,7 +43,7 @@ const Project = () => {
                         />
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
                     <div className="flex justify-center">
                         <motion.img
                             initial={{ scale: 0.5, opacity: 0 }}
@@ -54,7 +54,7 @@ const Project = () => {
                             className="w-full h-auto"
                         />
                     </div>
-                    <div className="text-center">
+                    <div className="flex flex-col items-center justify-center">
                         <motion.h2
                             initial={{ y: 50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -73,8 +73,8 @@ const Project = () => {
                         </motion.p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-                    <div className="text-center ">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+                    <div className="flex flex-col items-center justify-center ">
                         <motion.h2
                             initial={{ y: -50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -103,7 +103,7 @@ const Project = () => {
                         />
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
                     <div className="flex justify-center">
                         <motion.img
                             initial={{ scale: 0.5, opacity: 0 }}
@@ -114,7 +114,7 @@ const Project = () => {
                             className="w-full h-auto"
                         />
                     </div>
-                    <div className="text-center">
+                    <div className="flex flex-col items-center justify-center">
                         <motion.h2
                             initial={{ y: 50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -134,7 +134,7 @@ const Project = () => {
                     </div>
                 </div>
             </motion.div>
-        </>
+        </div>
     );
 };
 
