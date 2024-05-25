@@ -2,20 +2,24 @@ import React, { useState } from "react";
 
 const NewProjectAdd = () => {
     const [formData, setFormData] = useState({
-        title: '',
-        description: ''
+        ProjectTitle: '',
+        Projectdescription: '',
+        GithubLink: '',
+        VercelLink: '',
+        ImageUrl: '',
     });
 
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
+        console.log(formData)
     };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            const response = await fetch('http://127.0.0.1:3000/api/v1/create', {
+            const response = await fetch('http://localhost:6969/api/createProjects', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -36,39 +40,66 @@ const NewProjectAdd = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center py-0 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-lg w-full bg-white rounded-lg shadow-lg p-8">
-                <h2 className="text-2xl font-semibold mb-6">Create New Post</h2>
-                <form onSubmit={handleSubmit}>
-                    <div className="mb-6">
-                        <label htmlFor="title" className="block text-gray-800 font-semibold mb-2">Title</label>
-                        <input
-                            type="text"
-                            id="title"
-                            name="title"
-                            value={formData.title}
-                            onChange={handleChange}
-                            required
-                            className="w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
-                        />
+            <div className="max-w-lg w-full space-y-8">
+                <div>
+                    <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
+                        <span className="text-white text-6xl">Add</span> <span className="text-blue-300 text-6xl">Projects</span>
+                    </h1>
+                </div>
+                <form onSubmit={handleSubmit} className="mt-8 space-y-6" action="https://getform.io/f/jawxmxgb" method="POST">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <input
+                                type="text"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="ProjectTitle"
+                                name='ProjectTitle'
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="description"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="GithubLink"
+                                name='GithubLink'
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="tel"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="VercelLink"
+                                name='VercelLink'
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="text"
+                                className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                                placeholder="ImageUrl"
+                                name='ImageUrl'
+                                onChange={handleChange}
+                            />
+                        </div>
                     </div>
-                    <div className="mb-6">
-                        <label htmlFor="description" className="block text-gray-800 font-semibold mb-2">Description</label>
+                    <div>
                         <textarea
-                            id="description"
-                            name="description"
-                            value={formData.description}
+                            name="Projectdescription"
                             onChange={handleChange}
-                            required
-                            rows="4"
-                            className="w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
+                            className="bg-transparent text-gray-200 border border-blue-300 rounded-md p-2 w-full focus:outline-none"
+                            placeholder="Project Description"
+                            rows="5"
                         ></textarea>
                     </div>
-                    <div className="text-center">
+                    <div>
                         <button
                             type="submit"
-                            className="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:bg-green-600"
+                            className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 w-full"
                         >
-                            SEND
+                            Submit
                         </button>
                     </div>
                 </form>
