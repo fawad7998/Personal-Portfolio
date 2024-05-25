@@ -3,8 +3,12 @@ const mongoose = require('mongoose');
 const schema = new mongoose.Schema({
   ProjectTitle: { type: String, require: true },
   Projectdescription: { type: String, require: true },
-  GithubLink: { type: String, require: true },
-  VercelLink: { type: String, require: true },
+  GithubLink: {
+    type: String,
+    require: true,
+    default: 'https://github.com/fawad7998',
+  },
+  VercelLink: { type: String, require: true, default: 'https://vercel.com/' },
   ImageUrl: {
     type: String,
     require: true,

@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from "./Pages/Home"
+import Allprojects from './Pages/Projects/AllProjectSection';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Allprojects" element={<Allprojects />} />
       </Routes>
     </>
   );

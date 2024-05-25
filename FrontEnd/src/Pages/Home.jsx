@@ -9,7 +9,7 @@ import Experience from './Experience/Experience';
 import Education from './Education/Education';
 import Project from './Projects/Projects';
 import Contact from './Contact';
-
+import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <>
@@ -35,7 +35,7 @@ const Home = () => {
                         <p className="mb-8 text-3xl max-w-full md:max-w-lg">with 2 year's of experience</p>
                         <div className='flex'>
                             <a href="/FawadCV.pdf"><button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Resume <LinkArrow className={'w-5 ml-1'} /></button></a>
-                            <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button>
+                            <Link to="/Allprojects"> <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button></Link>
                         </div>
                         <div className="flex space-x-2 md:space-x-4 mt-6 justify-start">
                             <a href="#" className="text-blue-500 hover:text-white rounded-full border-2 border-blue-500 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-colors duration-300">
