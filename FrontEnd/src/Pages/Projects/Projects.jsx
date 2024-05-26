@@ -48,7 +48,7 @@ const Project = () => {
                                         <a href={project.GithubLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
                                             Github
                                         </button></a>
-                                        <a href={project.VercelLink}> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
+                                        <a href={project.VercelLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
                                             Website
                                         </button></a>
                                     </motion.div>
@@ -71,7 +71,7 @@ const Project = () => {
                                         initial={{ scale: 0.5, opacity: 0 }}
                                         whileInView={{ scale: 1, opacity: 1 }}
                                         transition={{ duration: 0.5, type: "spring" }}
-                                        src={project.imageUrl}
+                                        src={project.ImageUrl}
                                         alt="Project"
                                         className="w-full h-auto"
                                     />
@@ -83,7 +83,7 @@ const Project = () => {
                                         transition={{ duration: 0.5, type: "spring" }}
                                         className="text-4xl font-bold mb-5"
                                     >
-                                        {project.title}
+                                        {project.ProjectTitle}
                                     </motion.h2>
                                     <motion.p
                                         initial={{ y: 50, opacity: 0 }}
@@ -91,7 +91,7 @@ const Project = () => {
                                         transition={{ duration: 0.5, type: "spring" }}
                                         className="text-lg text-gray-500"
                                     >
-                                        {project.description}
+                                        {project.Projectdescription}
                                     </motion.p>
                                     <motion.div
                                         initial={{ y: -50, opacity: 0 }}
@@ -99,12 +99,12 @@ const Project = () => {
                                         transition={{ duration: 0.5, type: "spring" }}
                                         className="flex mt-10 text-lg text-gray-500"
                                     >
-                                        <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
+                                        <a href={project.GithubLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
                                             Github
-                                        </button>
-                                        <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
+                                        </button></a>
+                                        <a href={project.VercelLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
                                             Website
-                                        </button>
+                                        </button></a>
                                     </motion.div>
                                 </div>
                             </>
