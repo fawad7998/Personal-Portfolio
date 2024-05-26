@@ -5,7 +5,13 @@ const router = require('./routes/route');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://fawad-portfolio.vercel.app/',
+    methods: ['POST', 'GET'],
+    credentials: true,
+  })
+);
 app.use('/api', router);
 mongoose
   .connect(

@@ -12,7 +12,7 @@ export const DataProvider = ({ children }) => {
     // Function to fetch data
     const fetchData = async () => {
         try {
-            const response = await fetch('http://localhost:6969/api/getProjects');
+            const response = await fetch('https://portfolio-backend-sigma-ten.vercel.app/api/getProjects');
             const jsonData = await response.json();
             console.log(jsonData.data)
             setData(jsonData.data);
