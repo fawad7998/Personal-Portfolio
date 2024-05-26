@@ -29,7 +29,12 @@ const Navbar = () => {
 
                     </li>
                     <li className="relative group hover:text-blue-500 cursor-pointer">
-                        <ScrollLink to="project" smooth={true} duration={500}>Project</ScrollLink>
+                        <ScrollLink to="projects" smooth={true} duration={500}>Project</ScrollLink>
+                        <span className="absolute top-6 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+
+                    </li>
+                    <li className="relative group hover:text-blue-500 cursor-pointer">
+                        <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
                         <span className="absolute top-6 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
 
                     </li>

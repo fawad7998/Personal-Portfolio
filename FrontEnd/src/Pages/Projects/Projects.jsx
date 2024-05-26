@@ -6,7 +6,7 @@ import { LinkArrow } from '../../assets/LinkArrow';
 const Project = () => {
     const projects = useContext(DataContext)
     return (
-        <div className='scale-90 mt-[100px]'>
+        <div id='projects' className='scale-90 p-20'>
             <h1 className="text-4xl font-bold text-center mb-8 pb-6">
                 <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projects</span>
             </h1>
