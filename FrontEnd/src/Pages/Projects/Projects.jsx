@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { DataContext } from '../../ContextApi/Context';
+import { LinkArrow } from '../../assets/LinkArrow';
 
 const Project = () => {
     const projects = useContext(DataContext)
     return (
-        <div className='scale-90'>
+        <div className='scale-90 mt-[100px]'>
             <h1 className="text-4xl font-bold text-center mb-8 pb-6">
                 <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projects</span>
             </h1>
@@ -27,7 +28,7 @@ const Project = () => {
                                         initial={{ y: -50, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.5, type: "spring" }}
-                                        className="text-4xl font-bold mb-5"
+                                        className="text-4xl text-blue-300 font-bold mb-5"
                                     >
                                         {project.ProjectTitle}
                                     </motion.h2>
@@ -35,7 +36,7 @@ const Project = () => {
                                         initial={{ y: -50, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.5, type: "spring" }}
-                                        className="text-lg text-gray-500"
+                                        className="text-lg text-justify text-white"
                                     >
                                         {project.Projectdescription}
                                     </motion.p>
@@ -46,10 +47,10 @@ const Project = () => {
                                         className="flex mt-10 text-lg text-gray-500"
                                     >
                                         <a href={project.GithubLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
-                                            Github
+                                            Github <LinkArrow className={'w-5 ml-1'} />
                                         </button></a>
                                         <a href={project.VercelLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
-                                            Website
+                                            Website <LinkArrow className={'w-5 ml-1'} />
                                         </button></a>
                                     </motion.div>
                                 </div>
@@ -81,7 +82,7 @@ const Project = () => {
                                         initial={{ y: 50, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.5, type: "spring" }}
-                                        className="text-4xl font-bold mb-5"
+                                        className="text-4xl text-blue-300 font-bold mb-5"
                                     >
                                         {project.ProjectTitle}
                                     </motion.h2>
@@ -89,7 +90,7 @@ const Project = () => {
                                         initial={{ y: 50, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.5, type: "spring" }}
-                                        className="text-lg text-gray-500"
+                                        className="text-lg text-justify text-white"
                                     >
                                         {project.Projectdescription}
                                     </motion.p>
@@ -100,10 +101,10 @@ const Project = () => {
                                         className="flex mt-10 text-lg text-gray-500"
                                     >
                                         <a href={project.GithubLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
-                                            Github
+                                            Github <LinkArrow className={'w-5 ml-1'} />
                                         </button></a>
                                         <a href={project.VercelLink} target="_blank"> <button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
-                                            Website
+                                            Website <LinkArrow className={'w-5 ml-1'} />
                                         </button></a>
                                     </motion.div>
                                 </div>
