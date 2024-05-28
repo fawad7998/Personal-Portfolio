@@ -10,14 +10,15 @@ import Education from './Education/Education';
 import Project from './Projects/Projects';
 import Contact from './Contact';
 import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <>
-            <div id='/' className='bg-cover bg-center' style={{ backgroundImage: `url("/final.png")` }}>
-                <section className=" scale-90 text-white p-10 md:p-6 flex flex-col items-start justify-center h-screen bg-cover bg-center pt-20 md:pt-24" >
-                    <div className="container mx-auto mt-6 text-left">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
-                        <h2 className="text-2xl md:text-6xl text-blue-300 mb-4">
+            <div id='/' className='scale-90'>
+                <section className="text-white p-10 flex flex-col items-start justify-center h-screen bg-cover bg-left-top pt-20 md:pt-24 md:bg-[url('/final.png')]">
+                    <div className="container mx-auto text-left">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-blue-300 mb-4">
                             <TypeAnimation
                                 sequence={[
                                     "NextJs Developer",
@@ -32,10 +33,18 @@ const Home = () => {
                                 className="font-bold italic"
                             />
                         </h2>
-                        <p className="mb-8 text-3xl max-w-full md:max-w-lg">with 2 year's of experience</p>
-                        <div className='flex'>
-                            <a href="/FawadCV.pdf"><button className="bg-blue-500 flex text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">Resume <LinkArrow className={'w-5 ml-1'} /></button></a>
-                            <Link to="/Allprojects"> <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">Let's Talk</button></Link>
+                        <p className="mb-8 text-xl sm:text-2xl md:text-3xl max-w-full md:max-w-lg">with 2 years of experience</p>
+                        <div className='flex flex-wrap'>
+                            <a href="/FawadCV.pdf">
+                                <button className="bg-blue-500 flex items-center text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
+                                    Resume <LinkArrow className={'w-5 ml-1'} />
+                                </button>
+                            </a>
+                            <Link to="/Allprojects">
+                                <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">
+                                    Let's Talk
+                                </button>
+                            </Link>
                         </div>
                         <div className="flex space-x-2 md:space-x-4 mt-6 justify-start">
                             <a href="#" className="text-blue-500 hover:text-white rounded-full border-2 border-blue-500 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-colors duration-300">

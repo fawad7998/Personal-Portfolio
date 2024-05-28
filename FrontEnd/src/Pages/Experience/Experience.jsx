@@ -31,7 +31,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     return (
         <li
             ref={ref}
-            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between md:w-[80%]"
+            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between md:w-[80%] sm:w-full"
         >
             <LiIcon reference={ref} />
             <motion.div
@@ -39,7 +39,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, type: "spring" }}
             >
-                <h3 className="capitalize font-bold text-xl sm:text-xl xs:text-lg">
+                <h3 className="capitalize font-bold text-xl sm:text-lg xs:text-md">
                     {position}&nbsp;
                     <a
                         href={companyLink}
@@ -52,7 +52,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                 <span className="capitalize font-medium text-dark-blue-300 xs:text-sm">
                     {time} | {address}
                 </span>
-                <div className="text-justify font-medium text-md w-full md:text-sm">
+                <div className="text-justify font-medium text-md w-full md:text-sm xs:text-xs">
                     <ul>{displayWork(work)}</ul>
                 </div>
             </motion.div>
@@ -68,11 +68,11 @@ const Experience = () => {
     });
     const collaborations = projects.collaborations;
     return (
-        <div id="experience" className="scale-90 my-12 p-20">
-            <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
-                <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Experience</span>
+        <div id="experience" className="scale-90 my-12 p-4 sm:p-10 md:p-20">
+            <h1 className="text-4xl font-bold text-center mb-8 pb-6">
+                <span className="text-white text-6xl sm:text-5xl xs:text-4xl">My</span> <span className="text-blue-300 text-6xl sm:text-5xl xs:text-4xl">Experience</span>
             </h1>
-            <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full text-light-blue-100">
+            <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full text-light-blue-100 sm:w-full">
                 <motion.div
                     className="absolute left-9 top-0.5 w-[4px] h-full bg-dark-blue-500 origin-top dark:bg-light-blue-400 md:w-[2px] md:left-[30px] xs:left-[20px]"
                     style={{ scaleY: scrollYProgress }}

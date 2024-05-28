@@ -20,7 +20,7 @@ const Details = ({ name, company, year, place }) => {
     return (
         <li
             ref={ref}
-            className="my-8 first:mt-0 4xl:last:mb-19 2xl:last:mb-1 xl:last:mb-10 xs:last:mb-5 w-[60%] mx-auto flex flex-col justify-between md:w-[80%]"
+            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between md:w-[80%] sm:w-full"
         >
             <LiIcon reference={ref} />
             <motion.div
@@ -28,7 +28,7 @@ const Details = ({ name, company, year, place }) => {
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, type: "spring" }}
             >
-                <h3 className="capitalize text-white font-bold text-xl sm:text-xl xs:text-lg">
+                <h3 className="capitalize text-white font-bold text-xl sm:text-lg xs:text-md">
                     {name}
                 </h3>
                 <span className="capitalize font-medium text-blue-700/75 dark:text-blue-200/75 xs:text-sm">
@@ -50,11 +50,11 @@ const Education = () => {
         offset: ["start end", "center start"],
     });
     return (
-        <div className="scale-90 my-12 p-20">
-            <h1 className="text-4xl font-bold text-center  mb-8 pb-6">
-                <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Education</span>
+        <div id="education" className="scale-90 my-12 p-4 sm:p-10 md:p-20">
+            <h1 className="text-4xl font-bold text-center mb-8 pb-6">
+                <span className="text-white text-6xl sm:text-5xl xs:text-4xl">My</span> <span className="text-blue-300 text-6xl sm:text-5xl xs:text-4xl">Education</span>
             </h1>
-            <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
+            <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full sm:w-full">
                 <motion.div
                     className="absolute left-9 top-0.5 w-[4px] h-full bg-blue-900 origin-top dark:bg-blue-300 md:w-[2px] md:left-[30px] xs:left-[20px]"
                     style={{ scaleY: scrollYProgress }}
