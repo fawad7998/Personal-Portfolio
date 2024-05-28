@@ -13,14 +13,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <>
-            <div id='/' className='bg-cover bg-center' style={{ backgroundImage: `url("/latest3.png")` }}>
+            <div id='/' className='bg-cover bg-center' style={{ backgroundImage: `url("/small.png")` }}>
                 <section className=" scale-90 text-white p-10 md:p-6 flex flex-col items-start justify-center h-screen bg-cover bg-center pt-20 md:pt-24" >
                     <div className="container mx-auto mt-6 text-left">
                         <h1 className="text-4xl md:text-6xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
                         <h2 className="text-2xl md:text-6xl text-blue-300 mb-4">
                             <TypeAnimation
                                 sequence={[
-                                    "Frontend Developer",
+                                    "NextJs Developer",
                                     1000,
                                     "UI,UX Developer",
                                     1000,
