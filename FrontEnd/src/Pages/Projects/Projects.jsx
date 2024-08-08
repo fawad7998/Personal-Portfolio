@@ -16,7 +16,7 @@ const Project = () => {
                 transition={{ duration: 0.5, type: "spring" }}
                 className="container mx-auto pt-10"
             >
-                {projects.slice(0, 4).map((project, index) => (
+                {projects.map((project, index) => (
                     <div
                         key={index}
                         className={`grid grid-cols-1 md:grid-cols-2 gap-8 ${index % 2 !== 0 ? 'mt-20' : ''}`}

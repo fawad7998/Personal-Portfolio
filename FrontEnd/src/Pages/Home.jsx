@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <>
             <div id='/' className='scale-90'>
-                <section className="text-white p-10 flex flex-col items-center justify-center min-h-screen bg-cover bg-left-top pt-20 md:pt-24 md:bg-[url('/final.png')] md:flex-row md:justify-start">
+                <section className="text-white p-10 flex flex-col items-center justify-center min-h-screen bg-cover bg-left-top pt-20 md:pt-24 md:bg-[url('/upload.png')] md:flex-row md:justify-start">
                     <div className="container mx-auto text-center md:text-left">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">Hi, I'm Fawad Ahmad</h1>
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-blue-300 mb-4">
