@@ -7,6 +7,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/api', router);
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the Express API!');
+});
 mongoose
   .connect(
     'mongodb+srv://portfolio:fawad7998@cluster0.kc02ks7.mongodb.net/projectdata?retryWrites=true&w=majority&appName=Cluster0'
