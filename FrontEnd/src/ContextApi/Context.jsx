@@ -14,7 +14,7 @@ export const DataProvider = ({ children }) => {
         try {
             const response = await fetch('https://personal-portfolio-rust-iota.vercel.app/api/getProjects');
             const jsonData = await response.json();
-            console.log(jsonData.data)
+            // console.log(jsonData.data)
             setData(jsonData.data);
         } catch (error) {
             console.error('Error fetching data:', error);

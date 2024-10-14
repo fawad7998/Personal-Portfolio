@@ -8,18 +8,19 @@ const NewProjectAdd = () => {
         VercelLink: '',
         ImageUrl: '',
     });
+    const [status, setStatus] = useState();
 
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
-        console.log(formData)
+        // console.log(formData)
     };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:6969/api/createProjects', {
+            const response = await fetch('https://personal-portfolio-rust-iota.vercel.app/api/createProjects', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -29,6 +30,7 @@ const NewProjectAdd = () => {
 
             if (response.ok) {
                 console.log('Post created successfully');
+                setStatus('Project created successfully');
                 setFormData({ title: '', description: '' });
             } else {
                 console.error('Failed to create post');
@@ -103,6 +105,7 @@ const NewProjectAdd = () => {
                         </button>
                     </div>
                 </form>
+                {status && <div className="text-white font-bold text-center"> {status}</div>}
             </div>
         </div>
     );

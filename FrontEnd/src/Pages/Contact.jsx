@@ -118,7 +118,7 @@ const ContactForm = () => {
                         </button>
                     </div>
                 </form>
-                {status && <p className="text-center text-red-500">{status}</p>}
+                {status && <p className="text-center text-white">{status}</p>}
             </div>
         </div>
     );
