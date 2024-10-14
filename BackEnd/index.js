@@ -18,6 +18,4 @@ mongoose
     console.log(err, 'db not connected');
   });
 
-app.listen(6969, (port) => {
-  console.log('Server Running on 6969');
-});
+module.exports = app;
