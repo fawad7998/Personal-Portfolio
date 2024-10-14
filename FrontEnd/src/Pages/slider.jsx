@@ -55,7 +55,7 @@ const Slider = ({ session, signIn, signOut }) => {
                                 onClick={closeProductDropdown}
                             >
                                 <h1 className="p-4">PRODUCT</h1>
-                              <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between">
                                     <Link to="/product-intelligence" className="flex items-center gap-2 px-4 py-2 hover:bg-ternary-blue rounded-lg hover:text-white">
                                         <AiFillProduct className="text-primary-blue text-lg" />
                                         Product&nbsp;Intelligence

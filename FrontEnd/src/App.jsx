@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Home from "./Pages/Home"
 import Allprojects from './Pages/Projects/AllProjectSection';
 import NewProjectAdd from './Pages/SecretPage/NewProjectAdd';
-import Slider from './Pages/slider';
+import ContactForm from './Pages/Contact';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/allprojects" element={<Allprojects />} />
         <Route path="/secretpath" element={<NewProjectAdd />} />
-        <Route path="/slider" element={<Slider />} />
+        <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </>
   );

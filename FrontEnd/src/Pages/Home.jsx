@@ -40,7 +40,7 @@ const Home = () => {
                                     Resume <LinkArrow className={'w-5 ml-1'} />
                                 </button>
                             </a>
-                            <Link to="/Allprojects">
+                            <Link to="/contact">
                                 <button className="border border-blue-500 text-blue-500 py-2 px-4 rounded">
                                     Let's Talk
                                 </button>
