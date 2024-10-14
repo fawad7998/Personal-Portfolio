@@ -1,3 +1,4 @@
+const nodemailer = require('nodemailer');
 const sendmail = async (req, res) => {
   try {
     const { email, subject, message, name, number } = req.body;

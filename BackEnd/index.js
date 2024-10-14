@@ -24,4 +24,8 @@ mongoose
     console.log(err, 'db not connected');
   });
 
+app.listen(9090, () => {
+  console.log('port is running on 9090');
+});
+
 module.exports = app;
