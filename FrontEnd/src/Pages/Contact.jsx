@@ -45,7 +45,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div id='contact' className=" flex items-center justify-center py-0 px-4 sm:px-6 lg:px-8">
+        <div id='contact' className=" flex items-center justify-center pb-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-lg w-full space-y-8">
                 <div>
                     <h1 className="text-4xl font-bold text-center mb-8 pb-6">
