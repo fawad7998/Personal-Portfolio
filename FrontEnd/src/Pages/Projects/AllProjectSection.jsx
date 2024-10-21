@@ -1,14 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { DataContext } from '../../ContextApi/Context';
 import { LinkArrow } from '../../assets/LinkArrow';
 
 const AllProjects = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const projects = useContext(DataContext)
     return (
         <>
             <div id='projects' className='scale-90 '>
-                <h1 className="text-4xl font-bold text-center mb-8 pb-6">
+                <h1 className="text-4xl font-bold text-center  mt-28">
                     <span className="text-white text-6xl">My</span> <span className="text-blue-300 text-6xl">Projects</span>
                 </h1>
                 <motion.div

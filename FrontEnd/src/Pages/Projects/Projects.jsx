@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { DataContext } from '../../ContextApi/Context';
 import { LinkArrow } from '../../assets/LinkArrow';
+import { Link } from 'react-router-dom';
 
 const Project = () => {
     const projects = useContext(DataContext)
@@ -114,6 +115,13 @@ const Project = () => {
                         </div>
                     ))}
                 </motion.div>
+                <center className='mt-20'>
+                    <Link to="/allprojects">
+                        <button className="bg-blue-500 flex items-center justify-center h-16 w-48 text-[18px] text-white py-2 px-4 rounded mr-2 md:mr-4 mb-2 md:mb-0">
+                            See All Projects
+                        </button>
+                    </Link>
+                </center>
             </div>
         </>
 
